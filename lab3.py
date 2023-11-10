@@ -1,4 +1,5 @@
 #Lab 3 
+#Maria Garic
 import random
 
 class Card:
@@ -7,7 +8,7 @@ class Card:
         self._suit = suit
         self._value = value
         
-    def getValue(self): #Getters for our members. 
+    def getValue(self): 
         return self._value
     
     def getSuit(self):
@@ -16,7 +17,7 @@ class Card:
     def __str__(self): #Make sures that each card has a value and suit.
         values = ("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
         suit = ("hearts", "clubs", "diamonds", "spades")
-        return f"{values[self._value - 1]} of {suit[self._suit - 1]}" #-1 correct indexing to values.
+        return f"{values[self._value - 1]} of {suit[self._suit - 1]}" #-1, corresponding value
  
 class CardDeck:
     
